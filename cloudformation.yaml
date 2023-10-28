@@ -60,13 +60,13 @@ Resources:
             Id: omercrf
         PriceClass: PriceClass_All
         ViewerCertificate: 
-          AcmCertificateArn: arn:aws:acm:us-east-1:831828650187:certificate/22f3a29f-eba2-4e00-9f55-fdb5f6ea53d2
+          AcmCertificateArn: ********
           MinimumProtocolVersion: TLSv1.2_2021
           SslSupportMethod: sni-only
   MyRoute53:
     Type: AWS::Route53::RecordSetGroup
     Properties:
-      HostedZoneId: Z07431723KSU4WT407LJW
+      HostedZoneId: ********
       RecordSets: 
       - AliasTarget: 
           DNSName: !GetAtt MyCloudFront.DomainName
